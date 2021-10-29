@@ -22,7 +22,7 @@
         <tr>
             <td> 1 </td>
             <td> 11.05(금) </td>
-            <td> [인터페이스](https://typescript-kr.github.io/pages/interfaces.html) </td>
+            <td> <a href="https://typescript-kr.github.io/pages/interfaces.html">인터페이스</a> </td>
             <td>  
                 김다미: <a href="#">-</a>
             </td>
@@ -30,7 +30,7 @@
         <tr>
             <td> 1 </td>
             <td> 11.05(금) </td>
-            <td> [함수](https://typescript-kr.github.io/pages/functions.html) </td>
+            <td> <a href="https://typescript-kr.github.io/pages/functions.html">함수</a> </td>
             <td>  
                 이호찬: <a href="#">-</a>
             </td>
