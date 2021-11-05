@@ -32,7 +32,7 @@
             <td> 11.05(금) </td>
             <td> <a href="https://typescript-kr.github.io/pages/functions.html">함수</a> </td>
             <td>  
-                이호찬: <a href="#">-</a>
+                이호찬: <a href="./docs/Function.md">Function</a>
             </td>
         </tr>
     </tbody>
