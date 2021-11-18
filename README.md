@@ -36,7 +36,7 @@
             </td>
         </tr>
         <tr>
-            <td> 1 </td>
+            <td> 2 </td>
             <td> 11.12(금) </td>
             <td> <a href="https://typescript-kr.github.io/pages/classes.html">인터페이스</a> </td>
             <td>  
@@ -44,27 +44,43 @@
             </td>
         </tr>
         <tr>
-            <td> 1 </td>
+            <td> 2 </td>
             <td> 11.12(금) </td>
             <td> <a href="https://typescript-kr.github.io/pages/literal-types.html">Literal Types</a>, <a href="https://typescript-kr.github.io/pages/enums.html">Enums</a> </td>
             <td>  
                 이호찬: <a href="./docs/Literal-types.md">Literal Types</a>, <a href="./docs/Enums.md">Enums</a>
             </td>
         </tr>
-                <tr>
-            <td> 1 </td>
-            <td> 11.12(금) </td>
+        <tr>
+            <td> 3 </td>
+            <td> 11.18(목) </td>
             <td> <a href="https://typescript-kr.github.io/pages/classes.html">Generic</a> </td>
             <td>  
                 김다미: <a href="./docs/Classes.md">_</a>
             </td>
         </tr>
         <tr>
-            <td> 1 </td>
-            <td> 11.12(금) </td>
-            <td> <a href="https://typescript-kr.github.io/pages/enums.html">Decorator</a> </td>
+            <td> 3 </td>
+            <td> 11.18(목) </td>
+            <td> <a href="https://typescript-kr.github.io/pages/decorators.html">Decorator</a> </td>
             <td>  
-                이호찬: <a href="./docs/Literal-types.md">_</a>
+                이호찬: <a href="./docs/Decorators.md">Decorator</a>
+            </td>
+        </tr>
+                <tr>
+            <td> 4 </td>
+            <td> 11.25(목) </td>
+            <td> <a href="https://typescript-kr.github.io/pages/classes.html">_</a> </td>
+            <td>  
+                김다미: <a href="./docs/Classes.md">_</a>
+            </td>
+        </tr>
+        <tr>
+            <td> 4 </td>
+            <td> 11.25(목) </td>
+            <td> <a href="https://typescript-kr.github.io/pages/decorators.html"></a> </td>
+            <td>  
+                이호찬: <a href="./docs/Decorators.md">_</a>
             </td>
         </tr>
     </tbody>
