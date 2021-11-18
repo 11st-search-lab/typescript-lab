@@ -22,15 +22,15 @@
         <tr>
             <td> 1 </td>
             <td> 11.05(금) </td>
-            <td> <a href="https://typescript-kr.github.io/pages/interfaces.html">인터페이스</a> </td>
+            <td> <a href="https://typescript-kr.github.io/pages/interfaces.html">Interfaces</a> </td>
             <td>  
-                김다미: <a href="#">-</a>
+                김다미: <a href="./docs/interfaces.md">Interfaces</a>
             </td>
         </tr>
         <tr>
             <td> 1 </td>
             <td> 11.05(금) </td>
-            <td> <a href="https://typescript-kr.github.io/pages/functions.html">함수</a> </td>
+            <td> <a href="https://typescript-kr.github.io/pages/functions.html">Function</a> </td>
             <td>  
                 이호찬: <a href="./docs/Function.md">Function</a>
             </td>
@@ -38,7 +38,7 @@
         <tr>
             <td> 2 </td>
             <td> 11.12(금) </td>
-            <td> <a href="https://typescript-kr.github.io/pages/classes.html">인터페이스</a> </td>
+            <td> <a href="https://typescript-kr.github.io/pages/classes.html">Classes</a> </td>
             <td>  
                 김다미: <a href="./docs/Classes.md">Classes</a>
             </td>
@@ -54,9 +54,9 @@
         <tr>
             <td> 3 </td>
             <td> 11.18(목) </td>
-            <td> <a href="https://typescript-kr.github.io/pages/classes.html">Generic</a> </td>
+            <td> <a href="https://typescript-kr.github.io/pages/generics.html">Generics</a> </td>
             <td>  
-                김다미: <a href="./docs/Classes.md">_</a>
+                김다미: <a href="./docs/Generics.md">Generics</a>
             </td>
         </tr>
         <tr>
