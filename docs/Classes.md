@@ -108,7 +108,17 @@ tom.move(34); //Galloping...
 
 
 
-## Public, private 그리고 protected 지정자 (Public, private, and protected modifiers)
+## Public, private, protected 지정자(modifiers)
+
+### 요약
+
+| **접근제한자** |                           **특징**                           | 상속여부 | **외부 객체에서의 접근** |
+| :------------: | :----------------------------------------------------------: | :------: | :----------------------: |
+|     public     | public으로 설정된 멤버(멤버변수, 멤버메서드)는 상속 및 접근 가능 |    O     |            O             |
+|   protected    |       protected 설정된 멤버는 자식클래스에서 접근 가능       |    O     |            X             |
+|    private     |     private으로 설정된 멤버는 현재클래스에서만 접근 가능     |    X     |            X             |
+
+
 
 ### 기본적으로 공개 (Public by default)
 
@@ -134,6 +144,19 @@ new Animal("Cat").#name;
 
 
 
+### ECMAScript 비공개 필드(`#`) vs  `private` 
+
+`private` 키워드를 사용해야 하는지, ECMAScript의 해시/우물 (`#`) 비공개 필드를 사용해야 하는지는 상황마다 다르다.
+
+|      | ECMAScript 비공개 필드                                       | private 키워드                                               |
+| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 공개 | 강한 비공개(hard privacy)                                    | 약한 비공개(soft privacy)                                    |
+| 기능 | 완벽하게 클래스 밖에서 접근 불가능                           | 런타임에서는 완전히 일반 프로퍼티처럼 동작                   |
+| 지원 | ECMAScript 2015 (ES6) 이상만 지원.<br />하위 레벨 구현이 비공개를 강제하기 위해 `WeakMap`을 사용하나<br />`WeakMap`은 메모리 누수를 잃으키지 않도록 폴리필될 수 없기 때문 | 모든 버전 지원<br />ECMAScript3에서도 동작함                 |
+| 속도 | `WeakMap`을 이용해 다운 레벨 되기 때문에 <br />사용 속도가 느려질 수 있음 | 다른 어떤 프로퍼티와 다르지 않기 때문에 <br />접근 속도가 빠를 수 있음 |
+
+
+
 ### TypeScript의 `private` 이해하기 (Understanding TypeScript’s `private`)
 
 멤버를 `private`으로 표시하여 멤버를 포함하는 클래스 외부에서 이 멤버에 접근하지 못하도록 할 수 있다. 
@@ -147,11 +170,7 @@ class Animal {
 new Animal("Cat").name; // 오류: 'name'은 비공개로 선언되어 있다.
 ```
 
-TypeScript는 구조적인 타입 시스템이다. 두개의 다른 타입을 비교할 때 어디서 왔는지 상관없이 모든 멤버의 타입이 호환 된다면, 그 타입들 자체가 호환 가능하다고 말한다. 
-
-
-
-하지만 `private` 및 `protected` 멤버가 있는 타입들을 비교할 때는 타입을 다르게 처리한다. 
+TypeScript는 구조적인 타입 시스템이다. 두개의 다른 타입을 비교할 때 어디서 왔는지 상관없이 모든 멤버의 타입이 호환 된다면, 그 타입들 자체가 호환 가능하다고 말한다. 하지만 `private` 및 `protected` 멤버가 있는 타입들을 비교할 때는 타입을 다르게 처리한다. 
 
 ✅ 호환된다고 판단되는 두 개의 타입 중 **한 쪽에서 `private` 혹은 `protected` 멤버를 가지고 있다면, 다른 한 쪽도 무조건 동일한 선언에 `private` 혹은 `protected` 멤버를 가지고 있어야 한다**. 
 
@@ -499,3 +518,64 @@ interface Point3d extends Point {
 let point3d: Point3d = {x: 1, y: 2, z: 3};
 ```
 
+## 
+
+
+
+# 참고
+
+### JSDoc 프로퍼티 지정자 (JSDoc Property Modifiers) (
+
+> TypeScript3.8 https://www.typescriptlang.org/ko/docs/handbook/release-notes/typescript-3-8.html
+
+TypeScript 3.8는 `allowJs` 플래그를 사용하여 JavaScript 파일을 지원하고 `checkJs` 옵션이나 `// @ts-check` 주석을 `.js` 파일 맨 위에 추가하여 JavaScript 파일의 *타입-검사*를 지원한다.
+
+JavaScript 파일에는 타입-검사를 위한 전용 구문이 없기 때문에 TypeScript는 JSDoc을 활용한다. TypeScript 3.8은 프로퍼티에 대한 몇 가지 새로운 JSDoc 태그를 인식한다.
+
+`@public`, `@private` , `@protected`는 접근 지정자이다. 이 태그들은 TypeScript 내에서 각각 `public`, `private`, `protected`와 동일하게 동작한다.
+
+```tsx
+// @ts-check
+
+class Foo {
+    constructor() {
+        /** @private */
+        this.stuff = 100;
+    }
+
+    printStuff() {
+        console.log(this.stuff);
+    }
+}
+
+new Foo().stuff;
+//        ~~~~~
+// 오류! 'stuff' 프로퍼티는 private 이기 때문에 오직 'Foo' 클래스 내에서만 접근이 가능합니다.
+```
+
+- `@public`  : 암시적이며 생략될 수 있지만, 어디서든 해당 프로퍼티에 접근 가능을 의미
+- `@private` : 오직 프로퍼티를 포함하는 클래스 내에서 해당 프로퍼티 사용 가능을 의미
+- `@protected` : 프로퍼티를 포함하는 클래스와 파생된 모든 하위 클래스내에서 해당 프로퍼티를 사용할 수 있지만, 포함하는 클래스의 인스턴스는 해당 프로퍼티를 사용할 수 없음
+
+- `@readonly` : 프로퍼티가 초기화 과정 내에서만 값이 쓰이는 것을 보장함
+
+```tsx
+// @ts-check
+
+class Foo {
+    constructor() {
+        /** @readonly */
+        this.stuff = 100;
+    }
+
+    writeToStuff() {
+        this.stuff = 200;
+        //   ~~~~~
+        // 'stuff'는 읽기-전용(read-only) 프로퍼티이기 때문에 할당할 수 없습니다.
+    }
+}
+
+new Foo().stuff++;
+//        ~~~~~
+// 'stuff'는 읽기-전용(read-only) 프로퍼티이기 때문에 할당할 수 없습니다.
+```
