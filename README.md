@@ -78,9 +78,9 @@
         <tr>
             <td> 4 </td>
             <td> 11.25(목) </td>
-            <td> <a href="https://typescript-kr.github.io/pages/decorators.html"></a> </td>
+            <td> <a href="https://typescript-kr.github.io/pages/utility-types.html"></a> </td>
             <td>  
-                이호찬: <a href="./docs/Decorators.md">_</a>
+                이호찬: <a href="./docs/Utility-types.md">Utility Types</a>
             </td>
         </tr>
     </tbody>
