@@ -70,15 +70,15 @@
                 <tr>
             <td> 4 </td>
             <td> 11.25(목) </td>
-            <td> <a href="https://typescript-kr.github.io/pages/classes.html">_</a> </td>
+            <td> <a href="https://typescript-kr.github.io/pages/declaration-merging.html">Declaration Merging</a></td>
             <td>  
-                김다미: <a href="./docs/Classes.md">_</a>
+                김다미: <a href="./docs/Declaration-Merging.md">Declaration Merging</a>
             </td>
         </tr>
         <tr>
             <td> 4 </td>
             <td> 11.25(목) </td>
-            <td> <a href="https://typescript-kr.github.io/pages/utility-types.html"></a> </td>
+            <td> <a href="https://typescript-kr.github.io/pages/utility-types.html">Utility Types</a></td>
             <td>  
                 이호찬: <a href="./docs/Utility-types.md">Utility Types</a>
             </td>
