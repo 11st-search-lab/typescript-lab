@@ -91,6 +91,14 @@
                 김다미: <a href="#">Iterators and Generators</a>
             </td>
         </tr>
+           <tr>
+            <td> 5 </td>
+            <td> 12.09(목) </td>
+            <td> <a href="https://typescript-kr.github.io/pages/mixins.html">Mixins</a></td>
+            <td>  
+                김다미: <a href="#">Mixins</a>
+            </td>
+        </tr>
         <tr>
             <td> 5 </td>
             <td> 12.09(목) </td>
