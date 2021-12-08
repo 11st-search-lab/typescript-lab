@@ -67,7 +67,7 @@
                 이호찬: <a href="./docs/Decorators.md">Decorator</a>
             </td>
         </tr>
-                <tr>
+         <tr>
             <td> 4 </td>
             <td> 11.25(목) </td>
             <td> <a href="https://typescript-kr.github.io/pages/declaration-merging.html">Declaration Merging</a></td>
@@ -81,6 +81,22 @@
             <td> <a href="https://typescript-kr.github.io/pages/utility-types.html">Utility Types</a></td>
             <td>  
                 이호찬: <a href="./docs/Utility-types.md">Utility Types</a>
+            </td>
+        </tr>
+        <tr>
+            <td> 5 </td>
+            <td> 12.09(목) </td>
+            <td> <a href="https://typescript-kr.github.io/pages/iterators-and-generators.html">Iterators and Generators</a></td>
+            <td>  
+                김다미: <a href="#">Iterators and Generators</a>
+            </td>
+        </tr>
+        <tr>
+            <td> 5 </td>
+            <td> 12.09(목) </td>
+            <td> <a href="https://typescript-kr.github.io/pages/jsx.html">jsx</a></td>
+            <td>  
+                이호찬: <a href="#">jsx</a>
             </td>
         </tr>
     </tbody>
