@@ -331,3 +331,9 @@ const x = preact.h("div", null);
 
 팩토리가 `React.createElement(기본값)`로 정의되어 있다면, 컴파일러는 전역 JSX를 검사하기 전에 `React.JSX`를 먼저 검사할 것이다.
 팩토리가 `h`로 정의되어 있다면, 컴파일러는 전역 JSX를 검사하기 전에 `h.JSX`를 검사할 것이다.
+
+---
+
+## 참고
+
+- https://egas.tistory.com/32
