@@ -88,7 +88,7 @@
             <td> 12.09(목) </td>
             <td> <a href="https://typescript-kr.github.io/pages/iterators-and-generators.html">Iterators and Generators</a></td>
             <td>  
-                김다미: <a href="#">Iterators and Generators</a>
+                김다미: <a href="./docs/Iterables.md">Iterators and Generators</a>
             </td>
         </tr>
            <tr>
@@ -96,7 +96,7 @@
             <td> 12.09(목) </td>
             <td> <a href="https://typescript-kr.github.io/pages/mixins.html">Mixins</a></td>
             <td>  
-                김다미: <a href="#">Mixins</a>
+                김다미: <a href="./docs/Mixin.md">Mixins</a>
             </td>
         </tr>
         <tr>
@@ -104,7 +104,7 @@
             <td> 12.09(목) </td>
             <td> <a href="https://typescript-kr.github.io/pages/jsx.html">jsx</a></td>
             <td>  
-                이호찬: <a href="#">jsx</a>
+                이호찬: <a href="./docs/Jsx.md">jsx</a>
             </td>
         </tr>
     </tbody>
