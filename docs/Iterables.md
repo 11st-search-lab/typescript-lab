@@ -14,8 +14,47 @@
 >
 > 
 >
-> 이터레이션 프로토콜은 다양한 데이터 공급자가 하나의 순회 방식을 갖도록 규정하여 데이터 소비자가 효율적으로 다양한 데이터 공급자를 사용할 수 있도록 데이터소비자와 데이터 공급자를 연결하는 인터페이스의 역할을 한다. 
+> ### 이터레이션 프로토콜 
 >
+> 이터러블 프로토콜을 준수한 객체를 이터러블이라 한다. 이터러블은 **Symbol.iterator 메소드**를 구현하거나 프로토타입 체인에 의해 상속한 객체를 말한다. Symbol.iterator 메소드는 이터레이터를 반환한다. 이터러블은 for…of 문에서 순회할 수 있으며 Spread 문법의 대상으로 사용할 수 있다.
+>
+> 배열은 Symbol.iterator 메소드를 소유한다. 따라서 배열은 이터러블 프로토콜을 준수한 이터러블이다.
+>
+> ```javascript
+> const array = [1, 2, 3];
+> 
+> // 배열은 Symbol.iterator 메소드를 소유한다.
+> // 따라서 배열은 이터러블 프로토콜을 준수한 이터러블이다.
+> console.log(Symbol.iterator in array); // true
+> 
+> // 이터러블 프로토콜을 준수한 배열은 for...of 문에서 순회 가능하다.
+> for (const item of array) {
+>   console.log(item);
+> }
+> ```
+>
+> 일반 객체는 Symbol.iterator 메소드를 소유하지 않는다. 따라서 일반 객체는 이터러블 프로토콜을 준수한 이터러블이 아니다.
+>
+> ```javascript
+> const obj = { a: 1, b: 2 };
+> 
+> // 일반 객체는 Symbol.iterator 메소드를 소유하지 않는다.
+> // 따라서 일반 객체는 이터러블 프로토콜을 준수한 이터러블이 아니다.
+> console.log(Symbol.iterator in obj); // false
+> 
+> // 이터러블이 아닌 일반 객체는 for...of 문에서 순회할 수 없다.
+> // TypeError: obj is not iterable
+> for (const p of obj) {
+>   console.log(p);
+> }
+> ```
+>
+> 일반 객체는 이터레이션 프로토콜을 준수(Symbol.iterator 메소드를 소유)하지 않기 때문에 이터러블이 아니다. 따라서 일반 객체는 for…of 문에서 순회할 수 없으며 Spread 문법의 대상으로 사용할 수도 없다. 하지만 일반 객체도 이터러블 프로토콜을 준수하도록 구현하면 이터러블이 된다. 
+>
+> 
+>
+> 이터레이션 프로토콜은 다양한 데이터 공급자가 하나의 순회 방식을 갖도록 규정하여 데이터 소비자가 효율적으로 다양한 데이터 공급자를 사용할 수 있도록 데이터소비자와 데이터 공급자를 연결하는 인터페이스의 역할을 한다. 
+
 > - 데이터 소비자: for...of, spread operator, desctructuring, Map, Set 생성자
 > - 인터페이스: iteration protocol
 > - 데이터 공급자: Array, String, Map, Set, DOM Collection
