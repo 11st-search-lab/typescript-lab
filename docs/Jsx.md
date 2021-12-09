@@ -291,7 +291,7 @@ var a = <div>
 
 ## 리액트와 통합하기 (React integration)
 
-리액트에서 JSX를 사용하기 위해선 `react-typed`를 사용해야한다. 이는 리액트를 사용할 수 있도록 JSX 네임스페이스를 적절하게 정의한다.
+리액트에서 TSX를 사용하기 위해선 `@types/react`를 사용해야한다. 이는 리액트를 사용할 수 있도록 JSX 네임스페이스를 적절하게 정의한다.
 
 ```ts
 /// <reference path="react.d.ts" />
