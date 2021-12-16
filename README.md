@@ -91,7 +91,7 @@
                 김다미: <a href="./docs/Iterables.md">Iterators and Generators</a>
             </td>
         </tr>
-           <tr>
+        <tr>
             <td> 5 </td>
             <td> 12.09(목) </td>
             <td> <a href="https://typescript-kr.github.io/pages/mixins.html">Mixins</a></td>
@@ -105,6 +105,22 @@
             <td> <a href="https://typescript-kr.github.io/pages/jsx.html">jsx</a></td>
             <td>  
                 이호찬: <a href="./docs/Jsx.md">jsx</a>
+            </td>
+        </tr>
+        <tr>
+            <td> 6 </td>
+            <td> 12.16(목) </td>
+            <td> <a href="#">Module</a></td>
+            <td>  
+                김다미: <a href="./docs/Module.md">_</a>
+            </td>
+        </tr>
+        <tr>
+            <td> 6 </td>
+            <td> 12.16(목) </td>
+            <td> <a href="https://typescript-kr.github.io/pages/module-resolution.html">Module Resolution</a>, <a href="https://typescript-kr.github.io/pages/namespaces.html">Namespaces</a></td>
+            <td>  
+                이호찬: <a href="./docs/Module-resolution.md">Module Resolution</a>, <a href="./docs/Namespaces.md">Namespaces</a>
             </td>
         </tr>
     </tbody>
