@@ -110,9 +110,9 @@
         <tr>
             <td> 6 </td>
             <td> 12.16(목) </td>
-            <td> <a href="#">Module</a></td>
+            <td> <a href="https://typescript-kr.github.io/pages/modules.html">Modules</a></td>
             <td>  
-                김다미: <a href="./docs/Module.md">_</a>
+                김다미: <a href="./docs/Modules.md">Modules</a>
             </td>
         </tr>
         <tr>
